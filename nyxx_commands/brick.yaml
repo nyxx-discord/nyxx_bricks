@@ -1,0 +1,22 @@
+name: nyxx_commands
+description: A nyxx bot written with the help of the nyxx_commands package.
+version: 0.1.0
+
+environment:
+  mason: ">=0.1.0-dev.39 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: The name of your project
+    prompt: What should the name of your project be?
+
+  prefix:
+    type: string
+    description: The prefix to use for your bot
+    prompt: What prefix should your bot have?
+
+  mentionable:
+    type: boolean
+    description: Whether to allow commands to be invoked by mention
+    prompt: Should mentions trigger commands?
