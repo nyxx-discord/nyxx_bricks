@@ -1,0 +1,8 @@
+ChatCommand(
+  '{{ name.snakeCase() }}',
+  '{{ description }}',{{# chat_include_options}}
+  options: CommandOptions(type: CommandType.{{ chat_command_type }}),{{/ chat_include_options }}
+  id('{{ name.snakeCase() }}', (IChatContext context) async {
+    // TODO: Implement {{ name }}
+  }),
+);

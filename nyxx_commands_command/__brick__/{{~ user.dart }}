@@ -1,0 +1,7 @@
+UserCommand(
+  '{{ name.snakeCase() }}',
+  '{{ description }}',
+  (UserContext context) async {
+    // TODO: Implement {{ name }}
+  },
+);

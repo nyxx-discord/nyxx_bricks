@@ -1,0 +1,7 @@
+MessageCommand(
+  '{{ name.snakeCase() }}',
+  '{{ description }}',
+  (MessageContext context) async {
+    // TODO: Implement {{ name }}
+  },
+);
