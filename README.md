@@ -13,5 +13,5 @@ These bricks can be used with the [Mason CLI](https://pub.dev/packages/mason_cli
 1. Install the [mason CLI](https://pub.dev/packages/mason_cli): `dart pub global activate mason_cli`
 2. Install the nyxx bricks
     - Locally (in an existing project): [follow the mason documentation](https://pub.dev/packages/mason_cli#initializing)
-    - Globally (anywhere): `mason add -g brick_name --git-url https://github.com/abitofevrything/nyxx_bricks --git path brick_name` where `brick_name` is replaced with the name of the brick you're interested in.
+    - Globally (anywhere): `mason add -g brick_name --git-url https://github.com/nyxx-discord/nyxx_bricks --git path brick_name` where `brick_name` is replaced with the name of the brick you're interested in.
 3. Make the brick you installed: `mason make brick_name`
