@@ -1,0 +1,28 @@
+name: nyxx_full
+description: Starter template for a complete nyxx bot with docker-compose.
+version: 0.1.0
+
+environment:
+  mason: ">=0.1.0-dev.39 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: The name of your project
+    prompt: What should the name of your project be?
+
+  postgres_database:
+    type: boolean
+    description: Whether to create a PostgreSQL database service
+    prompt: Should a PostgreSQL database be created?
+
+  lavalink:
+    type: boolean
+    description: Whether to create a Lavalink server service
+    prompt: Should a Lavalink service be created?
+
+  get_it:
+    type: boolean
+    description: Whether to use package:get_it to manage services
+    prompt: Should we use package:get_it to manage services?
+

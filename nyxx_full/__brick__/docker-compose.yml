@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  {{ name }}:
+    build: .
+    restart: always
+    env_file:
+      .env
+
+    links: [
+      {{# postgres_database }} database, {{/ postgres_database }}
+      {{# lavalink}} lavalink, {{/ lavalink}}
+    ]
+    depends_on: [
+      {{# postgres_database }} database, {{/ postgres_database }}
+      {{# lavalink}} lavalink, {{/ lavalink}}
+    ]
+{{# postgres_database}}
+  database:
+    image: postgres:latest
+    restart: always
+    env_file:
+      .env
+{{/ postgres_database}}
+{{# lavalink }}
+  lavalink:
+    image: fredboat/lavalink:master
+    restart: always
+    volumes:
+     - ./lavalink.yml:/opt/Lavalink/application.yml
+{{/ lavalink}}

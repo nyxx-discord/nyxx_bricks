@@ -1,0 +1,23 @@
+import 'dart:io';
+
+import 'package:postgres/postgres.dart';
+
+class Database {
+  final PostgreSQLConnection connection;
+
+  Database(this.connection);
+
+  static Future<Database> connect() async {
+    final connection = PostgreSQLConnection(
+      'database', // Database is linked in as `database` in docker-compose.yml
+      5432, // Default postgres port
+      Platform.environment['POSTGRES_DB']!,
+      username: Platform.environment['POSTGRES_USER']!,
+      password: Platform.environment['POSTGRES_PASSWORD']!,
+    );
+    await connection.open();
+    return Database(connection);
+  }
+
+  // TODO: Add methods for interacting with the database here
+}
