@@ -1,10 +1,10 @@
 # {{ name }}
 
-A Discord bot made with [nyxx](https://pub.dev/packages/nyxx) and (nyxx_commands)[https://pub.dev/packages/nyxx_commands]!
+A Discord bot made with [nyxx](https://pub.dev/packages/nyxx) and [nyxx_commands](https://pub.dev/packages/nyxx_commands)!
 
 ### Getting started
 #### Development
-This brick includes a (devcontainer)[https://code.visualstudio.com/docs/devcontainers/containers] to make developing with Docker and docker-compose easier. Devcontainers allow you to have access to your other docker-compose services such as databases without having to run them manually on your host machine.
+This brick includes a [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) to make developing with Docker and docker-compose easier. Devcontainers allow you to have access to your other docker-compose services such as databases without having to run them manually on your host machine.
 
 If you're using a devcontainer-compatible IDE, you can follow the setup instructions for that IDE:
 - vscode: https://code.visualstudio.com/docs/devcontainers/containers#_getting-started
