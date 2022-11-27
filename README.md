@@ -8,6 +8,7 @@ These bricks can be used with the [Mason CLI](https://pub.dev/packages/mason_cli
 - `nyxx_base`: A bare-bones starter template for nyxx bots
 - `nyxx_commands`: A starter template for bots using nyxx_commands
 - `nyxx_full`: A complete template for bots using nyxx and docker-compose
+- `nyxx_commands_command`: A quick template for making command with nyxx_commands
 
 ### Using these bricks
 1. Install the [mason CLI](https://pub.dev/packages/mason_cli): `dart pub global activate mason_cli`
