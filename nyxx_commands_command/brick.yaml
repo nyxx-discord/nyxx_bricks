@@ -1,6 +1,7 @@
 name: nyxx_commands_command
 description: A template for creating commands for nyxx_commands.
 version: 0.1.0
+repository: https://github.com/nyxx-discord/nyxx_bricks
 
 environment:
   mason: ">=0.1.0-dev.39 <0.1.0"
