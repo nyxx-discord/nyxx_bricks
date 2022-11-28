@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: publish-mason-brick
-        uses: abitofevrything/publish-mason-brick@1.0.0
+        uses: abitofevrything/publish-mason-brick@1.0.1
         with:
           path: nyxx_base
           email: ${{ secrets.BRICKHUB_EMAIL }}
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: publish-mason-brick
-        uses: abitofevrything/publish-mason-brick@1.0.0
+        uses: abitofevrything/publish-mason-brick@1.0.1
         with:
           path: nyxx_commands
           email: ${{ secrets.BRICKHUB_EMAIL }}
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: publish-mason-brick
-        uses: abitofevrything/publish-mason-brick@1.0.0
+        uses: abitofevrything/publish-mason-brick@1.0.1
         with:
           path: nyxx_full
           email: ${{ secrets.BRICKHUB_EMAIL }}
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: publish-mason-brick
-        uses: abitofevrything/publish-mason-brick@1.0.0
+        uses: abitofevrything/publish-mason-brick@1.0.1
         with:
           path: nyxx_commands_command
           email: ${{ secrets.BRICKHUB_EMAIL }}
