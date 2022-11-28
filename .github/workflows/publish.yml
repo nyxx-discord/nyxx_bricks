@@ -6,43 +6,36 @@ on:
       - main
 
 jobs:
-  publish_nyxx_base:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: publish-mason-brick
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: publish_nyxx_base
         uses: abitofevrything/publish-mason-brick@1.0.2
         with:
           path: nyxx_base
           email: ${{ secrets.BRICKHUB_EMAIL }}
           password: ${{ secrets.BRICKHUB_PASSWORD }}
 
-  publish_nyxx_commands:
-    runs-on: ubuntu-latest
-    steps:
-      - name: publish-mason-brick
+      - name: publish_nyxx_commands
         uses: abitofevrything/publish-mason-brick@1.0.2
         with:
           path: nyxx_commands
           email: ${{ secrets.BRICKHUB_EMAIL }}
           password: ${{ secrets.BRICKHUB_PASSWORD }}
 
-  publish_nyxx_full:
-    runs-on: ubuntu-latest
-    steps:
-      - name: publish-mason-brick
+      - name: publish_nyxx_full
         uses: abitofevrything/publish-mason-brick@1.0.2
         with:
           path: nyxx_full
           email: ${{ secrets.BRICKHUB_EMAIL }}
           password: ${{ secrets.BRICKHUB_PASSWORD }}
 
-  publish_nyxx_commands_command:
-    runs-on: ubuntu-latest
-    steps:
-      - name: publish-mason-brick
+      - name: publish_nyxx_commands_command
         uses: abitofevrything/publish-mason-brick@1.0.2
         with:
           path: nyxx_commands_command
           email: ${{ secrets.BRICKHUB_EMAIL }}
           password: ${{ secrets.BRICKHUB_PASSWORD }}
-
