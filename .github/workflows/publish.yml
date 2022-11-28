@@ -1,0 +1,48 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish_nyxx_base:
+    runs-on: ubuntu-latest
+    steps:
+      - name: publish-mason-brick
+        uses: abitofevrything/publish-mason-brick@1.0.0
+        with:
+          path: nyxx_base
+          email: ${{ secrets.BRICKHUB_EMAIL }}
+          password: ${{ secrets.BRICKHUB_PASSWORD }}
+
+  publish_nyxx_commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: publish-mason-brick
+        uses: abitofevrything/publish-mason-brick@1.0.0
+        with:
+          path: nyxx_commands
+          email: ${{ secrets.BRICKHUB_EMAIL }}
+          password: ${{ secrets.BRICKHUB_PASSWORD }}
+
+  publish_nyxx_full:
+    runs-on: ubuntu-latest
+    steps:
+      - name: publish-mason-brick
+        uses: abitofevrything/publish-mason-brick@1.0.0
+        with:
+          path: nyxx_full
+          email: ${{ secrets.BRICKHUB_EMAIL }}
+          password: ${{ secrets.BRICKHUB_PASSWORD }}
+
+  publish_nyxx_commands_command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: publish-mason-brick
+        uses: abitofevrything/publish-mason-brick@1.0.0
+        with:
+          path: nyxx_commands_command
+          email: ${{ secrets.BRICKHUB_EMAIL }}
+          password: ${{ secrets.BRICKHUB_PASSWORD }}
+
