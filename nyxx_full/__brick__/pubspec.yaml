@@ -4,11 +4,11 @@ version: 0.1.0
 publish_to: none
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: '>=2.17.0 <4.0.0'
 
 dependencies:
-  nyxx: ^4.3.0
-  nyxx_commands: ^4.3.0
+  nyxx: ^5.0.0
+  nyxx_commands: ^5.0.0
   {{# postgres_database }}postgres: ^2.5.2{{/ postgres_database }}
   {{# lavalink }}nyxx_lavalink: ^3.1.0{{/ lavalink }}
   {{# get_it }}get_it: ^7.2.0{{/ get_it }}
