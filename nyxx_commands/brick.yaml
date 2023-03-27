@@ -1,6 +1,6 @@
 name: nyxx_commands
 description: A nyxx bot written with the help of the nyxx_commands package.
-version: 0.1.0
+version: 0.2.0
 repository: https://github.com/nyxx-discord/nyxx_bricks
 
 environment:
